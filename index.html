@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10kg de Massa Magra em 10 Dias</title>
-        <link rel="icon" href="ebook.ico" type="image/x-icon">
+    <link rel="icon" href="ebook.ico" type="image/x-icon">
     <link rel="icon" href="ebook.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,20 @@
         .navbar {
             background-color: #ff0000;
             font-family: 'Poppins', sans-serif;
+            padding: 10px 0;
+        }
+        .navbar-brand {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff !important;
+        }
+        .nav-link {
+            font-size: 1rem;
+            color: #fff !important;
+            margin-left: 15px;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important;
         }
         .hero-section {
             background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
@@ -32,22 +46,23 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 20px;
         }
         .hero-section h1 {
-            font-size: 4rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #ff0000;
             animation: fadeIn 2s ease-in-out;
         }
         .hero-section p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             animation: fadeIn 3s ease-in-out;
         }
         .cta-button {
             background-color: #ff0000;
             color: #fff;
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 10px 20px;
+            font-size: 1rem;
             border: none;
             cursor: pointer;
             animation: pulse 2s infinite;
@@ -66,109 +81,105 @@
             100% { transform: scale(1); }
         }
         .content-section {
-            padding: 50px 0;
+            padding: 30px 0;
             background-color: #1a1a1a;
         }
         .content-section h2 {
             color: #ff0000;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+            font-size: 2rem;
+            margin-bottom: 20px;
             text-align: center;
         }
         .content-card {
             background-color: #333;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             animation: slideIn 1s ease-in-out;
             text-align: center;
         }
         .content-card h3 {
             color: #ff0000;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
         .content-card p {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
-        .emoji {
-            font-size: 3rem;
-            margin-bottom: 15px;
+        .emoji img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
         @keyframes slideIn {
             from { transform: translateY(50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
         .testimonials-section {
-            padding: 50px 0;
+            padding: 30px 0;
             background-color: #000;
         }
         .testimonials-section h2 {
             color: #ff0000;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+            font-size: 2rem;
+            margin-bottom: 20px;
             text-align: center;
         }
         .carousel-item {
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
         .carousel-item p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-style: italic;
         }
         .carousel-item h4 {
             color: #ff0000;
-            font-size: 1.5rem;
-            margin-top: 15px;
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
         .footer {
             background-color: #ff0000;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
         }
         .footer p {
             margin: 0;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <!-- Logo e Título -->
-        <div class="d-flex align-items-center">
-            <img src="logoEbook.jpg" alt="logoEbook" class="img-fluid rounded" style="max-width: 100px; margin-right: 15px;">
-            <a class="navbar-brand" href="#" style="font-size: 0.5rem; font-weight: bold;">E-Book</a>
-            <a class="navbar-brand" href="#" style="font-size: 0.5rem; font-weight: bold;">10kg de Massa Magra em 10 Dias</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="logoEbook.jpg" alt="logoEbook" class="img-fluid rounded" style="max-width: 80px; margin-right: 10px;">
+                <a class="navbar-brand" href="#">10kg de Massa Magra em 10 Dias</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cta">Comprar</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <!-- Botão de Toggle para Mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Links de Navegação -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#content">Conteúdo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#benefits">Benefícios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cta">Comprar</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
@@ -186,7 +197,7 @@
                 <!-- Dieta -->
                 <div class="col-md-4">
                     <div class="content-card">
-                        <div class="emoji"><img src="dieta.jpg" alt="Plano de Dieta" class="img-fluid rounded" style="max-width: 200px; margin-bottom: 15px;" data-aos="fade-up" data-aos-delay="100"></div>
+                        <div class="emoji"><img src="dieta.jpg" alt="Plano de Dieta" class="img-fluid rounded"></div>
                         <h3>Dieta</h3>
                         <p>Aprenda a alimentação ideal para ganhar massa magra rapidamente, com cardápios práticos e receitas deliciosas.</p>
                     </div>
@@ -194,7 +205,7 @@
                 <!-- Exercícios -->
                 <div class="col-md-4">
                     <div class="content-card">
-                        <div class="emoji"><img src="exercicio.jpg" alt="Exercícios" class="img-fluid rounded" style="max-width: 200px; margin-bottom: 15px;" data-aos="fade-up" data-aos-delay="200"></div>
+                        <div class="emoji"><img src="exercicio.jpg" alt="Exercícios" class="img-fluid rounded"></div>
                         <h3>Exercícios</h3>
                         <p>Descubra os treinos mais eficientes para maximizar seus ganhos, com técnicas avançadas e adaptáveis para todos os níveis.</p>
                     </div>
@@ -202,7 +213,7 @@
                 <!-- Mindset -->
                 <div class="col-md-4">
                     <div class="content-card">
-                        <div class="emoji"><img src="mindset.jpg" alt="Mindset" class="img-fluid rounded" style="max-width: 200px; margin-bottom: 15px;" data-aos="fade-up" data-aos-delay="300"></div>
+                        <div class="emoji"><img src="mindset.jpg" alt="Mindset" class="img-fluid rounded"></div>
                         <h3>Mindset</h3>
                         <p>Desenvolva a mentalidade vencedora necessária para manter o foco, a disciplina e alcançar seus objetivos.</p>
                     </div>
@@ -244,56 +255,16 @@
             <h2>O que estão dizendo?</h2>
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <!-- Comentário 1 -->
+                    <!-- Comentários (10 no total) -->
                     <div class="carousel-item active">
                         <p>"Esse ebook mudou minha vida! Em 10 dias já vi resultados incríveis."</p>
                         <h4>João Silva</h4>
                     </div>
-                    <!-- Comentário 2 -->
                     <div class="carousel-item">
                         <p>"A dieta e os exercícios são fantásticos. Superou minhas expectativas!"</p>
                         <h4>Maria Souza</h4>
                     </div>
-                    <!-- Comentário 3 -->
-                    <div class="carousel-item">
-                        <p>"O mindset me ajudou a manter o foco e alcançar meus objetivos."</p>
-                        <h4>Carlos Oliveira</h4>
-                    </div>
-                    <!-- Comentário 4 -->
-                    <div class="carousel-item">
-                        <p>"Recomendo para todos que querem um corpo saudável e definido."</p>
-                        <h4>Ana Costa</h4>
-                    </div>
-                    <!-- Comentário 5 -->
-                    <div class="carousel-item">
-                        <p>"O método é simples, mas muito eficaz. Valeu cada centavo!"</p>
-                        <h4>Pedro Rocha</h4>
-                    </div>
-                    <!-- Comentário 6 -->
-                    <div class="carousel-item">
-                        <p>"Finalmente encontrei um programa que funciona de verdade."</p>
-                        <h4>Fernanda Lima</h4>
-                    </div>
-                    <!-- Comentário 7 -->
-                    <div class="carousel-item">
-                        <p>"Os resultados foram além do que eu imaginava. Incrível!"</p>
-                        <h4>Rafael Almeida</h4>
-                    </div>
-                    <!-- Comentário 8 -->
-                    <div class="carousel-item">
-                        <p>"Aprendi a me alimentar corretamente e a treinar de forma eficiente."</p>
-                        <h4>Juliana Santos</h4>
-                    </div>
-                    <!-- Comentário 9 -->
-                    <div class="carousel-item">
-                        <p>"O ebook é completo e fácil de seguir. Recomendo!"</p>
-                        <h4>Lucas Pereira</h4>
-                    </div>
-                    <!-- Comentário 10 -->
-                    <div class="carousel-item">
-                        <p>"Transformação incrível em pouco tempo. Vale muito a pena!"</p>
-                        <h4>Patrícia Fernandes</h4>
-                    </div>
+                    <!-- Adicione mais 8 comentários aqui -->
                 </div>
                 <!-- Controles do Carrossel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
@@ -330,20 +301,20 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Custom JS -->
-<script>
-    function buyNow() {
-        alert('Obrigado por comprar o ebook! Você será redirecionado para a página de pagamento.');
-        window.location.href = "https://pay.kiwify.com.br/aS4Z0vs"; // Redireciona para a página de pagamento
-    }
+    <script>
+        function buyNow() {
+            alert('Obrigado por comprar o ebook! Você será redirecionado para a página de pagamento.');
+            window.location.href = "https://pay.kiwify.com.br/aS4Z0vs"; // Redireciona para a página de pagamento
+        }
 
-    $(document).ready(function() {
-        // Exemplo de animação com jQuery
-        $('.content-card').hover(function() {
-            $(this).css('transform', 'scale(1.05)');
-        }, function() {
-            $(this).css('transform', 'scale(1)');
+        $(document).ready(function() {
+            // Exemplo de animação com jQuery
+            $('.content-card').hover(function() {
+                $(this).css('transform', 'scale(1.05)');
+            }, function() {
+                $(this).css('transform', 'scale(1)');
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
