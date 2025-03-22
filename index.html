@@ -151,6 +151,41 @@ body {
             margin: 0;
             font-size: 0.9rem;
         }
+        .hero-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 600px; /* Largura máxima do card */
+    margin: 0 auto; /* Centraliza o card horizontalmente */
+}
+
+.hero-card h1 {
+    color: #ff0000; /* Cor do título */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+.hero-card p {
+    color: #fff; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.cta-button {
+    background-color: #ff0000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.cta-button:hover {
+    background-color: #cc0000; /* Cor de fundo ao passar o mouse */
+}
 
         /* Mobile First Adjustments */
         @media (max-width: 767.98px) {
@@ -189,6 +224,41 @@ body {
             .carousel-item h4 {
                 font-size: 1rem;
             }
+            .hero-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 600px; /* Largura máxima do card */
+    margin: 0 auto; /* Centraliza o card horizontalmente */
+}
+
+.hero-card h1 {
+    color: #ff0000; /* Cor do título */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+.hero-card p {
+    color: #fff; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.cta-button {
+    background-color: #ff0000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.cta-button:hover {
+    background-color: #cc0000; /* Cor de fundo ao passar o mouse */
+}
         }
     </style>
 </head>
@@ -223,15 +293,17 @@ body {
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-card">
             <h1>E-Book</h1>
             <h1>10kg de Massa Magra em 10 Dias</h1>
             <p>Transforme seu corpo em apenas 10 dias com nosso método comprovado!</p>
             <button class="cta-button" onclick="buyNow()">Compre Agora</button>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Content Section -->
     <section id="content" class="content-section">
