@@ -139,7 +139,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
                         <img src="logoEbook.jpg" alt="logoEbook" class="img-fluid rounded" style="max-width: 100px; margin-bottom: 15px;">
-            <a class="navbar-brand" href="#">10kg de massa magra em 10 Dias</a>
+            <a class="navbar-brand" href="#">|       10kg de massa magra em 10 Dias</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -323,20 +323,20 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Custom JS -->
-    <script>
-        function buyNow() {
-            alert('Obrigado por comprar o ebook! Você será redirecionado para a página de pagamento.');
-            // Aqui você pode adicionar a lógica de redirecionamento ou AJAX para processar a compra
-        }
+<script>
+    function buyNow() {
+        alert('Obrigado por comprar o ebook! Você será redirecionado para a página de pagamento.');
+        window.location.href = "https://pay.kiwify.com.br/aS4Z0vs"; // Redireciona para a página de pagamento
+    }
 
-        $(document).ready(function() {
-            // Exemplo de animação com jQuery
-            $('.content-card').hover(function() {
-                $(this).css('transform', 'scale(1.05)');
-            }, function() {
-                $(this).css('transform', 'scale(1)');
-            });
+    $(document).ready(function() {
+        // Exemplo de animação com jQuery
+        $('.content-card').hover(function() {
+            $(this).css('transform', 'scale(1.05)');
+        }, function() {
+            $(this).css('transform', 'scale(1)');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
